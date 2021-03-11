@@ -1,0 +1,270 @@
+@import "settings"
+@import "nav"
+
+// home page
+.head_box
+  background: url("/images/background.png") no-repeat center
+  background-size: cover
+  max-height: 100vh
+
+// header => nav.sass
+
+.head_box_main_info
+  display: flex
+  justify-content: space-between
+  flex-direction: column
+  align-items: center
+  &_title
+    color: lighten($sand, 10%)
+    margin-top: 11%
+    @media (min-width: 320px) and (max-width: 550px)
+      margin-top: 150px
+  &_sub
+    margin-top: 3%
+    color: $white
+    font-weight: lighter
+    width: 80%
+    @media (min-width: 320px) and (max-width: 550px)
+      font-size: 32px
+      margin-top: 8%
+  &_video_link
+    margin-top: 5%
+    color: $white
+    background-color: $black
+    @media (min-width: 320px) and (max-width: 550px)
+      margin-top: 8%
+    &:hover
+      background-color: $white
+      color: $black
+      transition: color, background-color 0.6s ease-in
+
+.plants_icons
+  margin-top: 7%
+  padding-bottom: 5%
+  display: flex
+  justify-content: center
+  width: 100%
+  @media (min-width: 320px) and (max-width: 550px)
+    flex-direction: column
+    align-items: center
+  &_wrapper
+    width: 20%
+    display: flex
+    justify-content: space-between
+    @media (min-width: 320px) and (max-width: 550px)
+      justify-content: center
+  &_wrapper:nth-child(1n)
+    margin-right: 16px
+    @media (min-width: 320px) and (max-width: 550px)
+      margin-right: 5px
+  &_wrapper:nth-child(2n)
+    margin-left: 16px
+    @media (min-width: 320px) and (max-width: 550px)
+      margin-left: 5px
+
+.info_box
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  margin-top: 4%
+  .service_btn
+    @media (min-width: 320px) and (max-width: 550px)
+      margin-top: 8%
+  &_title
+    text-transform: uppercase
+    font-size: 16px
+    color: $sand
+    margin-top: 3%
+    @media (min-width: 320px) and (max-width: 550px)
+      margin-top: 8%
+  &_sub
+    font-size: 14px
+    width: 16%
+    margin-top: 3%
+    @media (min-width: 320px) and (max-width: 550px)
+      width: 100%
+
+
+.card_box
+  margin-bottom: 12%
+  &_title
+    margin-bottom: 7%
+    margin-top: 5%
+    @media (min-width: 320px) and (max-width: 550px)
+      font-size: 46px
+  &_items
+    display: flex
+    justify-content: space-around
+    @media (min-width: 320px) and (max-width: 550px)
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &_item
+      display: block
+      padding: 30px
+      border-radius: 10px
+      color: $white
+      width: 300px
+      height: 180px
+      box-shadow: 1px 2px 10px $black
+      @media (min-width: 320px) and (max-width: 550px)
+        margin-bottom: 15%
+      &:hover
+        box-shadow: 2px 0 12px $black
+        transition: box-shadow 0.5s ease-in
+      //&_counter
+    .card_item_one
+      background: url("/images/Rectangle 13 (3).png") no-repeat center
+      background-size: cover
+    .card_item_two
+      background: url("/images/Rectangle 11.png") no-repeat center
+      background-size: cover
+    .card_item_three
+      background: url("/images/Rectangle 13.png") no-repeat center
+      background-size: cover
+    .card_item_four
+      background: url("/images/Rectangle 13 (1).png") no-repeat center
+      background-size: cover
+
+
+// services page styles
+
+.services_box
+  background: url("/images/Background (2).png") no-repeat center
+  background-size: cover
+  height: 100vh
+
+.services_main_box
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+
+.services
+  width: 60%
+  z-index: 1
+  margin: auto 0
+  padding: 10%
+  @media (min-width: 320px) and (max-width: 550px)
+    margin: 150px auto 0 auto
+    padding: 5%
+    width: 90%
+  &_content
+    background: url("/images/Card.png") no-repeat center
+    background-size: cover
+    box-shadow: 2px 4px 10px $black
+    padding: 50px
+    border-radius: 10px
+    display: flex
+    justify-content: center
+    flex-direction: column
+    &_title
+      text-align: left
+      color: lighten($sand, 10%)
+      font-size: 52px
+      margin-top: 4%
+      margin-bottom: 3%
+      @media (min-width: 320px) and (max-width: 550px)
+        font-size: 30px
+        margin-top: 8%
+        margin-bottom: 5%
+        text-align: center
+    &_sub
+      text-align: left
+      color: $white
+      font-size: 26px
+      margin-bottom: 5%
+      width: 60%
+      @media (min-width: 320px) and (max-width: 550px)
+        font-size: 22px
+        text-align: center
+        width: 100%
+        margin-top: 8%
+        margin-bottom: 5%
+    &_button
+      display: block
+      margin: 5% 0
+      background-color: lighten($light_green, 10%)
+      width: 160px
+      white-space: nowrap
+      @media (min-width: 320px) and (max-width: 550px)
+        width: auto
+        font-size: 16px
+        margin: 8% auto 5% auto
+
+
+
+// location page style
+
+.location_box
+  background: url("/images/Background (3).png") no-repeat center
+  background-size: cover
+  height: 100vh
+
+
+.location_main_box
+  display: flex
+  justify-content: center
+  flex-direction: column
+  align-items: center
+
+
+.location
+  opacity: 0.9
+  z-index: 1
+  margin: auto 0
+  padding: 10%
+  @media (min-width: 320px) and (max-width: 550px)
+    margin: 150px auto
+  &_content
+    box-shadow: 2px 4px 10px $black
+    padding: 50px
+    //backdrop-filter: blur(5px)
+    border-radius: 10px
+    background-color: $dark_green
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    &_title
+      color: $sand
+      font-size: 52px
+      margin-top: 4%
+      margin-bottom: 3%
+
+    &_sub
+      color: $white
+      font-size: 26px
+      @media (min-width: 320px) and (max-width: 550px)
+        font-size: 20px
+        margin-top: 8%
+        margin-bottom: 5%
+      span
+        display: block
+        margin: 3% 0
+        @media (min-width: 320px) and (max-width: 550px)
+          margin-top: 8%
+    &_button
+      margin: 5% 0
+      background-color: lighten($light_green, 10%)
+
+
+// shop page styles
+.shop_box
+  background: url("/images/Background (1).png") no-repeat center
+  background-size: cover
+  height: 100vh
+
+.shop_content
+  display: flex
+  justify-content: space-between
+
+
+
+.shop_content_item
+  //display: none
+
+// add shop/item page
+
+

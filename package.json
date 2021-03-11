@@ -1,0 +1,25 @@
+{
+  "name": "plants-shop",
+  "version": "1.0.0",
+  "description": "plants shop",
+  "main": "App.js",
+  "scripts": {
+    "dev": "nodemon App.js",
+    "start": "node App.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/noo8xl/plants-shop.git"
+  },
+  "author": "noo8xl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/noo8xl/plants-shop/issues"
+  },
+  "homepage": "https://gitlab.com/noo8xl/plants-shop#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "nodemon": "^2.0.7"
+  }
+}

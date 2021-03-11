@@ -1,0 +1,75 @@
+@import "settings"
+
+.header
+  display: flex
+  justify-content: center
+  padding: 30px 0
+  align-items: center
+  &_mobile
+    display: none
+  &_nav
+    @include lato_b
+    font-size: 22px
+    display: flex
+    justify-content: center
+    &_link
+      display: flex
+      color: $white
+      margin-left: 10%
+      white-space: nowrap
+      align-items: center
+      &:hover
+        color: $sand
+        transition: color 0.4s ease-in
+    &_link:nth-child(6n)
+      text-transform: capitalize
+      font-size: 20px
+      color: $black
+      background-color: $sand
+      padding: 8px 18px
+      &:hover
+        background-color: darken($sand, 10%)
+        transition: background-color 0.5s ease-in
+
+@media (min-width: 320px) and (max-width: 550px)
+  .header
+    position: fixed
+    width: 100%
+    z-index: 5
+    background-color: $black
+    padding: 20px
+    justify-content: space-between
+    &_nav
+      display: none
+    &_mobile_menu
+      position: relative
+      width: 40px
+      height: 16px
+      span
+        position: absolute
+        width: 40px
+        height: 3px
+        background-color: $sand
+        border-radius: 4px
+      span:nth-child(1n)
+        top: 0
+      span:nth-child(2n)
+        top: 10px
+    &_mobile_icon
+      margin-right: 20px
+      width: 45px
+      height: 30px
+      position: relative
+      .icon_sand_circle
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        background-color: $sand
+      .icon_back_circle
+        position: absolute
+        top: 0
+        right: 0
+        width: 30px
+        height: 30px
+        border-radius: 50%
+        background-color: $black
