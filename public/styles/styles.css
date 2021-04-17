@@ -34,7 +34,7 @@ section {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 60%;
   margin: 0 auto;
 }
 
@@ -127,7 +127,7 @@ section {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 60%;
   margin: 0 auto;
 }
 
@@ -612,6 +612,54 @@ section {
 .shop_content {
   display: flex;
   justify-content: space-between;
+}
+
+.add_box {
+  background-color: #213f36;
+}
+
+.add_table {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 30px;
+  margin: 20px;
+}
+.add_table_item {
+  text-align: center;
+  border: 1px solid #213f36;
+  padding: 20px;
+}
+
+.all_plants_headers {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.all_plants_headers_item {
+  text-align: center;
+  padding: 20px;
+}
+
+.all_plants_title,
+.add_title {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  margin: 20px auto 0 auto;
+}
+
+.plants_items {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+}
+.plants_items_item {
+  padding: 20px;
+  border: 1px solid #213f36;
 }
 
 /*# sourceMappingURL=styles.css.map */

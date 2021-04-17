@@ -1,9 +1,13 @@
 const {Router} = require('express')
+const Plant = require('../models/plant')
 const router = Router()
 
-router.get('/', (req,res) => {
+router.get('/', async (req,res) => {
+  const plant = await Plant.find()
   res.render('home', {
-    title: 'Plants Shop'
+    title: 'Plants Shop',
+    counter: plant.length,
+    plant
   })
 })
 

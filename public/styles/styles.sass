@@ -267,4 +267,45 @@
 
 // add shop/item page
 
+.add_box
+  background-color: $dark_green
 
+.add_table
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  padding: 30px
+  margin: 20px
+  //border: 1px solid $dark_green
+  &_item
+    text-align: center
+    border: 1px solid $dark_green
+    padding: 20px
+
+
+
+
+.all_plants_headers
+  @include lato_r
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  &_item
+    text-align: center
+    padding: 20px
+
+
+
+.all_plants_title,
+.add_title
+  @include lato_b
+  font-size: 22px
+  text-align: center
+  margin: 20px auto 0 auto
+
+.plants_items
+  @include lato_r
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  text-align: center
+  &_item
+    padding: 20px
+    border: 1px solid $dark_green

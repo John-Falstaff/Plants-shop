@@ -1,0 +1,72 @@
+<section id="add_shop">
+  <div class="add_box">
+    {{>nav}}
+  </div>
+  <div class="add_title">
+    if u need 2 add plant - just fill this form:
+  </div>
+  <form action="/add_plants" id="add_form" class="add_form" method="post">
+    <div class="add_table">
+      <div class="add_table_item">
+        <label for="add_name">
+          <input type="text" id="add_name" name="name" placeholder="plant name">
+        </label>
+      </div>
+      <div class="add_table_item">
+        <label for="add_type_of_plant">
+          <select name="type" id="add_type_of_plant">
+            <option value="foliage">foliage</option>
+            <option value="poisonous">poisonous</option>
+            <option value="flower">flower</option>
+            <option value="fruit">fruit</option>
+          </select>
+        </label>
+      </div>
+      <div class="add_table_item">
+        <label for="plant_image">
+          <input type="text" id="plant_image" name="img" placeholder="image link">
+        </label>
+      </div>
+      <div class="add_table_item">
+        <label for="plant_price">
+          <input type="text" id="plant_price" name="price" placeholder="price">
+        </label>
+      </div>
+      <div class="add_table_item">
+        <label for="add_button">
+          <button type="submit" id="add_button">add plant</button>
+        </label>
+      </div>
+    </div>
+  </form>
+
+  <div class="all_plants_title">
+    All plants in the shop:
+  </div>
+
+    <div class="all_plants_headers">
+      <div class="all_plants_headers_item">name</div>
+      <div class="all_plants_headers_item">type</div>
+      <div class="all_plants_headers_item">img</div>
+      <div class="all_plants_headers_item">price</div>
+      <div class="all_plants_headers_item">action</div>
+    </div>
+    <div class="plants_items ">
+
+    {{#each items}}
+
+      <div class="plants_items_item">{{name}}</div>
+      <div class="plants_items_item">{{type}}</div>
+      <div class="plants_items_item">{{img}}</div>
+      <div class="plants_items_item">{{price}}</div>
+      <div class="plants_items_item">
+        <input type="hidden" value="{{id}}">
+        <a href="/add_plants/{{id}}/edit?allow=true">edit</a>
+      </div>
+
+    {{/each}}
+
+    </div>
+
+
+</section>

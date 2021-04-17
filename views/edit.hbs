@@ -1,0 +1,41 @@
+<form action="/add_plants/edit" class="add_form" method="post">
+  <div class="add_table">
+    <div class="add_table_item">
+      <label for="add_name">
+        <input type="text" id="add_name" name="name" value="{{name}}">
+      </label>
+    </div>
+    <div class="add_table_item">
+      <label for="add_type_of_plant">
+        <select name="type" id="add_type_of_plant" >
+          <option value="foliage">foliage</option>
+          <option value="poisonous">poisonous</option>
+          <option value="flower">flower</option>
+          <option value="fruit">fruit</option>
+        </select>
+      </label>
+    </div>
+    <div class="add_table_item">
+      <label for="plant_image">
+        <input type="text" id="plant_image" name="img" value="{{img}}">
+      </label>
+    </div>
+    <div class="add_table_item">
+      <label for="plant_price">
+        <input type="text" id="plant_price" name="price" value="{{price}}">
+      </label>
+    </div>
+    <div class="add_table_item">
+      <label for="plant_id">
+        <input type="hidden" value="{{id}}">
+      </label>
+      <label for="add_button">
+        <button type="submit" id="add_button">edit plant</button>
+      </label>
+    </div>
+  </div>
+</form>
+<form action="/add_plants/remove" method="post">
+  <input type="hidden" name="id" value="{{id}}">
+  <button type="submit">delete</button>
+</form>
